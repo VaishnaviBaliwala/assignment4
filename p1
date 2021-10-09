@@ -1,0 +1,36 @@
+var no :[Int]=[43, 5, 1, 14, 3, 8, 72, 4, 6];
+var first,sec :Int;
+var size=no.count-1;
+first=no[0];
+sec=0;
+for i in no
+{
+  if(i>first)
+  {
+    first=i;
+  }
+}
+print("first:",first);
+for j in no
+{
+  if(first==j)
+  {
+  }
+  else
+  {
+    if(sec<j){
+      sec=j
+    }
+  }
+  if(j>sec) 
+  {
+    if(first==j)
+    {
+    }
+    else
+    {
+      sec=j;
+    }
+  }
+}
+print("second:",sec);
